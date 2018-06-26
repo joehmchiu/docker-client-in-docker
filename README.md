@@ -1,4 +1,4 @@
-# Docker Client in Docker for Jenkins Container
+# Docker Client in Docker for Jenkins Container in Centos
 
 ## Synopsis
 The primary purpose of running Docker clients in a Docker Jenkins container is to allow the Jenkins system to handle multiple container instances during the CI/CD testing with the development of Docker itself to make the tests to be more efficient, less risky.
