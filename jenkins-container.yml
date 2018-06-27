@@ -18,6 +18,9 @@
       with_items:
        - docker
 
+    - name: Start the dockerd service
+      service: name=docker state=started enabled=yes
+
     - name: clean up docker
       ignore_errors: yes
       shell: |
