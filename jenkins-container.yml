@@ -13,6 +13,11 @@
     uid: 1000
     port: 9191
   tasks:
+    - name: Install docker
+      yum: name={{ item }} state=installed
+      with_items:
+       - docker
+
     - name: clean up docker
       ignore_errors: yes
       shell: |
