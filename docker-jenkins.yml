@@ -1,4 +1,7 @@
 ---
+- name: include jenkins setting variables
+  include_vars: jenkins_vars
+
 - name: Install docker
   yum: name={{ item }} state=installed
   with_items:
