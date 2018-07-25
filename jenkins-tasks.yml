@@ -17,7 +17,7 @@
     docker rm -f $(docker ps -a -q)
     docker rmi -f $(docker images -q)
   args:
-    warn: no
+    warn: yes
 
 - name: Create jenkins directory beforehand
   file: path={{ jenkins_local }} state=directory owner={{uid}} mode=0755
