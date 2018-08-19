@@ -23,6 +23,7 @@
   file: path={{ jenkins_local }} state=directory owner={{uid}} mode=0755
 
 - name: Build a local jenkins docker container, it takes time...
+  ignore_errors: yes
   shell: |
     docker build -t {{image}} .
   args:
