@@ -1,4 +1,4 @@
-FROM openshift/jenkins-2-centos7:v3.10
+FROM openshift/jenkins-2-centos7
 
 USER root
 
