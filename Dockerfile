@@ -1,6 +1,8 @@
-FROM openshift/jenkins-2-centos7
+# FROM openshift/jenkins-2-centos7
+FROM jenkins
 
 USER root
+
 RUN yum update -y
 RUN yum install -y sudo
 RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
