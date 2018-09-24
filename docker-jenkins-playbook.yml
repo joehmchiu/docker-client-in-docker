@@ -21,14 +21,13 @@
     - name: Start the dockerd service
       service: name=docker state=started enabled=yes
 
-    - name: clean up docker
-      ignore_errors: yes
-      shell: |
-        docker stop $(docker ps -a -q)
-        docker rm -f $(docker ps -a -q)
-        docker rmi -f $(docker images -q)
-      args:
-        warn: no
+#     - name: clean up docker
+#       ignore_errors: yes
+#        docker stop $(docker ps -a -q)
+#         docker rm -f $(docker ps -a -q)
+#         docker rmi -f $(docker images -q)
+#       args:
+#         warn: no
 
     - name: Create jenkins directory beforehand
       file: path={{ jenkins_local }} state=directory owner={{uid}} mode=0755
