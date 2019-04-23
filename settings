@@ -1,7 +1,7 @@
 jenkins_home: /var/lib/jenkins
 jenkins_local: /opt/jenkins
 image: myjenkins
-password: foobar
+password: Foobar123!
 sock: /var/run/docker.sock
 docker: /usr/bin/docker
 sysconfig: /etc/sysconfig/docker

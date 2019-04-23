@@ -5,6 +5,9 @@ The primary purpose of running Docker clients in a Docker Jenkins container is t
 
 You probably have read these articles, [blog post](http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/) and [git dind](https://github.com/jpetazzo/dind/), and understand about the risks of running multiple Dockers in Docker. By this example, the docker in the Jenkins server acted as a client to the host to prevent from the potential issues as mentioned in the articles.
 
+## WARNING
+This Playbook will prunge all docker images, please comment out the docker lines if docker exists in the system.
+
 ## Systems / Applications
 * OS: Linux RHEL 7.5
 * Ansible: 2.7.5
